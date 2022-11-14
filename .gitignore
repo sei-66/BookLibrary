@@ -1,0 +1,17 @@
+# Pythonのキャッシュが自動で生成されているので除外
+__pycache__/
+
+#環境変数は除外
+.env
+
+#仮想環境は除外
+/venv/
+
+#mediaディレクトリに.gitkeepというファイルを生成し、それ以外は除外
+/media/*
+!/media/.gitkeep
+
+/static/*
+!/static/.gitkeep
+
+db.sqlite3
