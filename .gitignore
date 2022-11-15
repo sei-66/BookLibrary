@@ -11,7 +11,9 @@ __pycache__/
 /media/*
 !/media/.gitkeep
 
+#staticディレクトリに.gitkeepというファイルを生成し、それ以外は除外
 /static/*
 !/static/.gitkeep
 
+#DBは除外
 db.sqlite3

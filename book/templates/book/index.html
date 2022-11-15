@@ -21,7 +21,7 @@
     </div>
     <div class="col-3">
         <h2>評価順TOP5</h2>
-        {% for ranking_book in ranking_list %}
+        {% for ranking_book in page_obj %}
         <div class="p-4 m-4 bg-light border border-sucsess rounded">
             <h3 class="text-success h5">{{ ranking_book.title }}</h3>
             {% if ranking_book.thumbnail %}
@@ -31,6 +31,7 @@
             <a href="{% url 'detail-book' ranking_book.id %}">詳細へ</a>
         </div>
         {% endfor %}
+        {% include 'book/components/pagination.html' %}
     </div>
 </div>
 {% endblock content %}
