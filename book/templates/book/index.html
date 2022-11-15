@@ -10,7 +10,7 @@
         <div class="p-4 m-4 bg-light border border-sucsess rounded">
             <h2 class="text-sucsess">{{ item.title }}</h2>
             {% if item.thumbnail %}
-                <img src="{{ item.thumbnail.url }}"class="img-thumbnail" />
+                <img src="{{ item.thumbnail.url }}"class="img-thumbnail" width="200" height="200" />
             {% endif %}
             <h6>カテゴリ：{{ item.category }}</h6>
             <div class="mt-3">
