@@ -21,9 +21,11 @@ class ListBookViews(LoginRequiredMixin, ListView):
     model = Book
     paginate_by = ITEM_PER_PAGE
 
+
 class DetailBookView(LoginRequiredMixin, DetailView):
     template_name = 'book/book_detail.html'
     model = Book
+
 
 class CreateBookView(LoginRequiredMixin, CreateView):
     template_name = 'book/book_create.html'
@@ -35,6 +37,7 @@ class CreateBookView(LoginRequiredMixin, CreateView):
         form.instance.user = self.request.user
 
         return super().form_valid(form)
+
 
 class DeleteBookView(LoginRequiredMixin, DeleteView):
     template_name = 'book/book_confirm_delete.html'
@@ -48,6 +51,7 @@ class DeleteBookView(LoginRequiredMixin, DeleteView):
             raise PermissionDenied
 
         return obj
+
 
 class UpdateBookView(LoginRequiredMixin, UpdateView):
     model = Book
