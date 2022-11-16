@@ -27,7 +27,11 @@
             {% if ranking_book.thumbnail %}
                 <img src="{{ ranking_book.thumbnail.url }}"class="img-thumbnail" />
             {% endif %}
-            <h6>評価:{{ranking_book.avg_rating|floatformat:2}}点</h6>
+            {% if not ranking_book.avg_rating %}
+                <h6>評価:-点</h6>
+            {% else %}
+                <h6>評価:{{ranking_book.avg_rating|floatformat:2}}点</h6>
+            {% endif %}
             <a href="{% url 'detail-book' ranking_book.id %}">詳細へ</a>
         </div>
         {% endfor %}
