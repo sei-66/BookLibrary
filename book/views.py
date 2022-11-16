@@ -83,15 +83,11 @@ class CreateReviewView(CreateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['book'] = Book.objects.get(pk=self.kwargs['book_id'])
-        print(context)
-
         return context
 
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-        print("valid ok")
-
         return super().form_valid(form)
 
 
