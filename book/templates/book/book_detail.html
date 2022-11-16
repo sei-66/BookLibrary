@@ -6,9 +6,9 @@
 {% block content %}
     <div class="p-4 m-4 bg-light border border-sucsess rounded">
         <h2 class="text-sucsess">{{ object.title }}</h2>
-            <p>{{ object.text }}</p>
+            <p>{{ object.text | linebreaksbr }}</p>
             {% if object.thumbnail %}
-                <img src="{{ object.thumbnail.url }}"class="img-thumbnail" />
+                <img src="{{ object.thumbnail.url }}"class="img-thumbnail" width="200" />
             {% endif %}
             <div class="border p-4 mb-2">
                 <h2>レビュー</h2>
