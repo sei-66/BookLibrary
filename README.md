@@ -1,6 +1,6 @@
 # Book Library
 
-BookLibraryは、書籍「Djangoのツボとコツがゼッタイにわかる本」を読んで作成した本棚アプリです。
+BookLibraryは、書籍「Djangoのツボとコツがゼッタイにわかる本 第２版」を読んで作成した本棚アプリです。
 
 ## 機能一覧
 
@@ -20,4 +20,4 @@ BookLibraryは、書籍「Djangoのツボとコツがゼッタイにわかる本
 - Python 3.8.10
 - Django
 - Bootstrap
-- SQlite
+- SQLite
