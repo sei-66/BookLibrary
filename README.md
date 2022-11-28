@@ -1,6 +1,7 @@
 # Book Library
 
 BookLibraryは、書籍「Djangoのツボとコツがゼッタイにわかる本 第２版」を読んで作成した本棚アプリです。
+書籍のタイトル、詳細、カテゴリを登録することができます。レビューを投稿する機能もあります。
 
 ## 機能一覧
 
@@ -8,16 +9,14 @@ BookLibraryは、書籍「Djangoのツボとコツがゼッタイにわかる本
 - ユーザー登録
 - ログイン・ログアウト
 
-## 実行方法
+## デモ画面
 
-### venvの有効化
-`$ source venv/bin/activate`
-
-### サーバー起動
-`$ python3 manage.py runserver`
+![index_page](https://raw.github.com/wiki//sei-66/BookLibrary/images/index_page.png)
+![detail_page](https://raw.github.com/wiki//sei-66/BookLibrary/images/detail_page.png)
 
 ## 開発環境
+
 - Python 3.8.10
-- Django
+- Django 3.2
 - Bootstrap
 - SQLite

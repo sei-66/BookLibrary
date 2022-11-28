@@ -4,7 +4,7 @@ from .consts import MAX_RATE
 RATE_CHOICES = [(x, str(x)) for x in range(0, MAX_RATE + 1)]
 
 # Create your models here.
-CATEGORY = (("business", "ビジネス"), ("life", "生活"), ("manga", "マンガ"), ("other", "その他"))
+CATEGORY = (("business", "ビジネス"), ("life", "生活"), ("science・technology", "科学・テクノロジー"), ("music", "音楽"), ("sports", "スポーツ"), ("other", "その他"))
 
 
 class Book(models.Model):

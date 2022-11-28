@@ -25,7 +25,7 @@
         <div class="p-4 m-4 bg-light border border-sucsess rounded">
             <h3 class="text-success h5">{{ ranking_book.title }}</h3>
             {% if ranking_book.thumbnail %}
-                <img src="{{ ranking_book.thumbnail.url }}"class="img-thumbnail" />
+                <img src="{{ ranking_book.thumbnail.url }}"class="img-thumbnail" width="150"/>
             {% endif %}
             {% if not ranking_book.avg_rating %}
                 <h6>評価:-点</h6>
