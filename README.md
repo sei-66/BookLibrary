@@ -11,8 +11,8 @@ BookLibraryは、書籍「Djangoのツボとコツがゼッタイにわかる本
 
 ## デモ画面
 
-![index_page](https://raw.github.com/wiki//sei-66/BookLibrary/images/index_page.png)
-![detail_page](https://raw.github.com/wiki//sei-66/BookLibrary/images/detail_page.png)
+![index_page](https://github.com/sei-66/BookLibrary/blob/main/images/index_page.png)
+![detail_page](https://github.com/sei-66/BookLibrary/blob/main/images/detail_page.png)
 
 ## 開発環境
 
